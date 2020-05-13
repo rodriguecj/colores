@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  urlColors: 'https://reqres.in/api/colors'
 };
