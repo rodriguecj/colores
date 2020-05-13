@@ -1,0 +1,20 @@
+<div class="titulo">
+    <h1>
+        Colores
+    </h1>
+</div>
+<section class="colores" *ngIf="colores.length > 0">
+    <!-- <div (click)="clickColor( color.color )" class="color-caja" [ngStyle]='{ "background": color.color }' *ngFor="let color of colores"> -->
+    <!-- <div class="datail">
+            <span>{{ color.year }}</span>
+        </div>
+        <div class="datail">
+            <p>{{ color.name }}</p>
+            <span>{{ color.color }}</span>
+        </div>
+        <div class="datail">
+            <span>{{ color.pantone_value }}</span>
+        </div>-->
+    <!--  </div> -->
+    <app-color [color]='color' *ngFor="let color of colores"></app-color>
+</section>

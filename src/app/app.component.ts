@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { ColoresService } from './services/colores.service';
 
 @Component({
   selector: 'app-root',
@@ -9,16 +8,7 @@ import { ColoresService } from './services/colores.service';
 export class AppComponent {
   title = 'zahlen';
   
-  constructor( private colorService: ColoresService ){
-    this.colors();
-  }
+  constructor(){}
 
-  colors(){
-    this.colorService.getColors().subscribe( 
-      colors =>{
-        console.log(colors)
-      }
-    )
-  }
 
 }

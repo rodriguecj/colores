@@ -1,0 +1,12 @@
+<div (click)="clickColor( color.color )" class="color-caja" [ngStyle]='{ "background": color.color }'>
+    <div class="datail">
+        <span>{{ color.year }}</span>
+    </div>
+    <div class="datail">
+        <p>{{ color.name }}</p>
+        <span>{{ color.color }}</span>
+    </div>
+    <div class="datail">
+        <span>{{ color.pantone_value }}</span>
+    </div>
+</div>

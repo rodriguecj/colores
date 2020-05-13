@@ -1,0 +1,30 @@
+.color-caja {
+    height: 200px;
+    margin: 5px;
+    flex-grow: 1;
+    flex-basis: calc(30%);
+    min-width: 275px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    .datail {
+        flex-grow: 1;
+    }
+    .datail:nth-child(2) {
+        text-align: center;
+        align-self: center;
+        p {
+            font-size: 24px;
+        }
+        span {
+            font-weight: bold;
+            font-size: 28px;
+        }
+    }
+    .datail:last-child {
+        text-align: right;
+        align-self: flex-end;
+    }
+}
