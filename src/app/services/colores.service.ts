@@ -9,6 +9,8 @@ import { pluck, delay } from 'rxjs/operators'
 })
 export class ColoresService {
 
+  public selectedColor: string = '';
+
   constructor(private http: HttpClient) { }
 
   getColors( page: string = '1'){

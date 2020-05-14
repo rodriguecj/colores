@@ -2,9 +2,12 @@
     <div class="datail">
         <span>{{ color.year }}</span>
     </div>
-    <div class="datail">
+    <div class="datail animate__animated animate__fadeIn" *ngIf="coloresService.selectedColor !== color.color">
         <p>{{ color.name }}</p>
         <span>{{ color.color }}</span>
+    </div>
+    <div class="datail animate__animated animate__fadeIn" *ngIf="coloresService.selectedColor === color.color">
+        <p>Copiado!</p>
     </div>
     <div class="datail">
         <span>{{ color.pantone_value }}</span>

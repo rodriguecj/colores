@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Color } from '../../interface/color';
+import { ColoresService } from '../../services/colores.service';
 
 @Component({
   selector: 'app-color',
@@ -8,14 +9,15 @@ import { Color } from '../../interface/color';
 })
 export class ColorComponent implements OnInit {
   @Input() color: Color;
-  constructor() { }
+  constructor(public coloresService: ColoresService) { }
 
   ngOnInit(): void {
   }
   clickColor( color: string ){
-    console.log(color);
+    /* console.log(color); */
     navigator.clipboard.writeText(color).then( ()=> {
-      console.log(color, ' Copiado');
+      /* console.log(color, ' Copiado'); */
+      this.coloresService.selectedColor = color;
     })
   }
 }
