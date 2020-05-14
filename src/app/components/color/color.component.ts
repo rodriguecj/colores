@@ -14,9 +14,7 @@ export class ColorComponent implements OnInit {
   ngOnInit(): void {
   }
   clickColor( color: string ){
-    /* console.log(color); */
     navigator.clipboard.writeText(color).then( ()=> {
-      /* console.log(color, ' Copiado'); */
       this.coloresService.selectedColor = color;
     })
   }

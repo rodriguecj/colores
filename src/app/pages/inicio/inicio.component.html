@@ -8,6 +8,26 @@
     <app-color matRipple [color]='color' *ngFor="let color of colores"></app-color>
 </section>
 
+<section>
+    <div class="paginacion" *ngIf="colores.length > 0">
+
+        <div class="pagina-btn">
+            <button (click)="pageEvent(-1)" [disabled]='selectedPage ===1' mat-icon-button aria-label="Example icon button with a filter list icon">
+                <mat-icon>navigate_before</mat-icon>
+            </button>
+            <span (click)="pageEvent(-1)">Anterior</span>
+        </div>
+        <div class="pagina-btn">
+            <span (click)="pageEvent(1)">Siguiente</span>
+            <button (click)="pageEvent(1)" [disabled]='selectedPage === colorService.total_pages' mat-icon-button aria-label="Example icon button with a filter list icon">
+                <mat-icon>navigate_next</mat-icon>
+            </button>
+        </div>
+
+    </div>
+</section>
+
+
 <div class="text-center loading" *ngIf="colores.length === 0">
     <div class="spinner-border" style="width: 3rem; height: 3rem;" role="status">
         <span class="sr-only">Loading...</span>

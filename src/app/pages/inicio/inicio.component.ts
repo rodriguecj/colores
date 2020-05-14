@@ -7,25 +7,39 @@ import { Color } from '../../interface/color';
   templateUrl: './inicio.component.html',
   styleUrls: ['./inicio.component.scss']
 })
-export class InicioComponent implements OnInit {
+export class InicioComponent  implements OnInit {
 
   public colores: Color[] = [];
-
-  constructor(private colorService: ColoresService) { }
+  public selectedPage: number = 1;
+  constructor(public colorService: ColoresService) { 
+  }
 
   ngOnInit(): void {
     this.colors();
   }
-  colors(){
-    this.colorService.getColors().subscribe( 
+  colors( page: number = 1 ){
+    this.colorService.getColors(page).subscribe( 
       (colors: any) =>{
         this.colores = colors;
-        console.log(this.colores)
       }
     )
   }
-  /* clickColor( color: string ){
-    console.log(color);
-  } */
+  pageEvent(value){
+
+    if( this.selectedPage === 1 && value === -1){
+      return;
+    }
+    if( this.selectedPage === this.colorService.total_pages && value === 1){
+      return;
+    }
+    this.selectedPage += value;
+    this.colors( this.selectedPage );
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
+
+  }
 
 }

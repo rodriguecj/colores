@@ -13,35 +13,29 @@
     display: flex;
     flex-wrap: wrap;
     app-color {
-        /*height: 200px;
-                     background: yellow; */
         margin: 5px;
         flex-grow: 1;
         flex-basis: calc(30%);
         border-radius: 10px;
-        /* min-width: 275px;
-        display: flex;
-        flex-wrap: wrap;
-        padding: 10px;
-        border-radius: 10px; */
-        /*.datail {
-        flex-grow: 1;
+        min-width: 275px;
     }
-    .datail:nth-child(2) {
-        text-align: center;
-        align-self: center;
-        p {
-            font-size: 24px;
-        }
+}
+
+.paginacion {
+    height: 50px;
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid black;
+    .pagina-btn {
         span {
-            font-weight: bold;
-            font-size: 28px;
+            cursor: pointer;
         }
-    }
-    .datail:last-child {
-        text-align: right;
-        align-self: flex-end;
-    }*/
+        button:focus {
+            outline: none;
+        }
     }
 }
 
