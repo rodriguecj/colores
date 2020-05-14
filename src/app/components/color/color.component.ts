@@ -14,5 +14,8 @@ export class ColorComponent implements OnInit {
   }
   clickColor( color: string ){
     console.log(color);
+    navigator.clipboard.writeText(color).then( ()=> {
+      console.log(color, ' Copiado');
+    })
   }
 }
