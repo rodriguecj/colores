@@ -14,10 +14,11 @@
     flex-wrap: wrap;
     app-color {
         /*height: 200px;
-                     background: yellow; 
-        margin: 5px;*/
+                     background: yellow; */
+        margin: 5px;
         flex-grow: 1;
         flex-basis: calc(30%);
+        border-radius: 10px;
         /* min-width: 275px;
         display: flex;
         flex-wrap: wrap;

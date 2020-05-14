@@ -5,7 +5,7 @@
 </div>
 
 <section class="colores animate__animated animate__fadeIn" *ngIf="colores.length > 0">
-    <app-color [color]='color' *ngFor="let color of colores"></app-color>
+    <app-color matRipple [color]='color' *ngFor="let color of colores"></app-color>
 </section>
 
 <div class="text-center loading" *ngIf="colores.length === 0">

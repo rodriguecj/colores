@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { InicioRoutingModule } from './inicio-routing.module';
 import { InicioComponent } from './inicio.component';
 import { ComponetsModule } from '../../components/componets.module';
+import { MatRippleModule } from '@angular/material/core';
 
 
 
@@ -12,7 +13,8 @@ import { ComponetsModule } from '../../components/componets.module';
   imports: [
     CommonModule,
     InicioRoutingModule,
-    ComponetsModule
+    ComponetsModule,
+    MatRippleModule
   ]
 })
 export class InicioModule { }
