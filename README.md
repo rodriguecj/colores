@@ -1,10 +1,10 @@
 # Farben
 
-Este proyecto fue creado mediante [Angular CLI](https://github.com/angular/angular-cli) version 9.0.5.
+Este proyecto fue creado mediante [Angular CLI](https://github.com/angular/angular-cli) versión 9.0.5.
 
 ## Descripción del proyecto
 
-La funcion de esta aplicaciones esta en mostrar colores estandarizados para utilizarlos en proyectos de páginas web, nuevos diseños, flyers, entre otros. El color puede ser seleccionado por un click en la tarjeta y este automaticamente se copiara en hexadecimal en el portapapeles del usuario para poder pegar en cualquier lugar. La data de los colores se obtiene haciendo peticion a una API y esta es manipulada en la aplicacion mediante los operadores de RxJS.
+La funcion de esta aplicación esta en mostrar colores estandarizados para utilizarlos en proyectos de páginas web, nuevos diseños, flyers, entre otros. El color puede ser seleccionado por un click en la tarjeta y este automaticamente se copiará en hexadecimal en el portapapeles del usuario para poder pegar en cualquier lugar. La data de los colores se obtiene haciendo petición a una API y esta es manipulada en la aplicación mediante los operadores de RxJS.
 
 ## Tecnología usadas
 
@@ -44,3 +44,7 @@ Ejecutar `ng test` para ejecutar las pruebas unitarias a través de [Karma](http
 
 Ejecutar `ng e2e` para ejecutar las pruebas end-to-end via [Protractor](http://www.protractortest.org/).
 
+## URLs producci
+
+- [Firebase](https://pruebaepan.firebaseapp.com/inicio)
+- [Heroku](https://colors-paleta.herokuapp.com/inicio)
