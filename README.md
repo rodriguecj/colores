@@ -2,6 +2,10 @@
 
 Este proyecto fue creado mediante [Angular CLI](https://github.com/angular/angular-cli) version 9.0.5.
 
+## Descripción del proyecto
+
+La funcion de esta aplicaciones esta en mostrar colores estandarizados para utilizarlos en proyectos de páginas web, nuevos diseños, flyers, entre otros. El color puede ser seleccionado por un click en la tarjeta y este automaticamente se copiara en hexadecimal en el portapapeles del usuario para poder pegar en cualquier lugar. La data de los colores se obtiene haciendo peticion a una API y esta es manipulada en la aplicacion mediante los operadores de RxJS.
+
 ## Tecnología usadas
 
 - Angular version 9 | Framework de javascript.
