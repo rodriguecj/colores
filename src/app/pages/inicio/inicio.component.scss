@@ -42,3 +42,15 @@
 .loading {
     margin-top: 200px
 }
+
+.error {
+    margin-top: 200px;
+    p {
+        font-size: 20px;
+    }
+    mat-icon {
+        font-size: 100px;
+        height: 200px !important;
+        width: 200px !important;
+    }
+}

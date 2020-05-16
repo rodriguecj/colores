@@ -5,6 +5,7 @@
 export const environment = {
   production: false,
   urlColors: 'https://reqres.in/api/colors'
+  /* 'https://reqres.in/api/colors' */
 };
 
 /*
