@@ -1,10 +1,11 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ColorComponent } from './color.component';
+import { ColoresService } from '../../services/colores.service';
 
 describe('ColorComponent', () => {
   let component: ColorComponent;
-  let fixture: ComponentFixture<ColorComponent>;
+  let service = new ColoresService(null);
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
@@ -14,12 +15,11 @@ describe('ColorComponent', () => {
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ColorComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
+    component = new ColorComponent(service)
+
   });
 
-  it('should create', () => {
+  it('Se debe crear el componente ColorComponent', () => {
     expect(component).toBeTruthy();
   });
 });
