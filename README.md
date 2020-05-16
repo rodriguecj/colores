@@ -40,10 +40,6 @@ Ejecutar `ng build` para compilar el proyecto. Los artefactos de compilación se
 
 Ejecutar `ng test` para ejecutar las pruebas unitarias a través de [Karma](https://karma-runner.github.io).
 
-## Ejecutar pruebas end-to-end
-
-Ejecutar `ng e2e` para ejecutar las pruebas end-to-end via [Protractor](http://www.protractortest.org/).
-
 ## URLs producción
 
 - [Firebase](https://pruebaepan.firebaseapp.com/inicio)
